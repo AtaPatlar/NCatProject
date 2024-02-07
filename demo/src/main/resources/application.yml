@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/anket
+  jpa:
+    hibernate:
+      ddl-auto: update # create ve update yapımı
+    show-sql: true # sql kodları gösterme
+my-config:
+  jwt-secret-key: 5ccf533f341ff5e5b8cd9da5f3639c9bd3a6db56d0cc4a9887a35f0d7ed57ca57edd25ce6a9b073b4b4b1dc861ee9e6f9370067955e8b946e40695e1df3377bc
+  password-secret-key: 1db0199aab3c1a2b83ed346365d8326f6373b4cb8e634939b216bd982eaa198700c51bb9163246e9512933e7634a295efd4e7c26e1755925389c2c83228718e2
